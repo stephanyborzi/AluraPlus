@@ -1,0 +1,242 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+ 
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 3em 4em 3em 4em;
+}
+.container__caixa{
+    text-align: center;
+    margin-top: 5em;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
+
+    
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa{
+    margin:0 6em;
+}
+
+.container__secundario__imagem{
+    width: 80%;
+}
+.secundario{
+    align-items: center;
+}
+
+.container__secundario__titulo{
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 0.2em;
+    
+}
+.container__secundario__deescrição{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cinza-secundario);
+    width: 40em; ;
+
+}
+
+.terciario{
+    align-items: center; 
+}
+
+.container__terciario__texto{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    margin:0 7em 0 0;
+    color: var(--cinza-secundario);
+    margin-bottom: 1em;
+    
+}
+.container__terciario__imagem{
+    width: 80%;
+}
+.container__terciario__botao{
+    display: inline-block;
+    margin:0 7em 0 0;
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    width: 25%;
+}
+.quartenario{
+    align-items: center; 
+}
+.container__quartenario__imagem{
+    width: 80%;
+}
+.container__quartenario__titulo{
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    margin:0 0 0 0.25em;
+}
+.container__quartenario__texto{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cinza-secundario);
+    margin:0 15em 0 0;
+    padding: 1em;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.dispositivos{
+  text-align: center;
+}
+.dispositivos__titulo{
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 2em;
+}
+.lista__item{
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+}
+.rodape{
+    text-align: center;
+    margin: 8em 4em;
+}
+.rodape__imagem{
+   width: 15%;
+   padding-bottom:2em;
+   display: flex;
+   justify-content: center;
+}
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    list-style-type: none;
+
+}
+.rodape__lista__conteudo{
+    color: var(--cinza-secundario);
+    text-decoration: none;
+    padding-right: 1em;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+}
+.rodape__lista__texto{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cinza-secundario);
+    padding: 0.2em 0.5em;
+    display: inline-block;
+}
+.rodape__lista__texto1{
+    padding-bottom: 2em;
+}
+.rodape__lista a:hover{
+    color: var(--botao-azul);
+}
+.rodape__lista a:active{
+    color: red;
+}
+.container__botao:hover{
+    background-color: #378cf3;
+    color: #00030C;
+}
+.container__terciario__botao:hover{
+    background-color: #378cf3;
+    color: #00030C;
+}
+@media screen and (max-width:768px) {
+    .container{
+        display: block;
+        background-image: none;
+    }
+    .container__imagem{
+        width: 50vh;
+    }
+    .container__caixa{
+        margin: 2em 2em;
+    }
+
+    .secundario{
+        margin: 0;
+        text-align: center;
+    }
+    .container__secundario__imagem{
+        width: 50vw;
+    }
+    .dispositivos__lista{
+        display: block;
+    }
+}
